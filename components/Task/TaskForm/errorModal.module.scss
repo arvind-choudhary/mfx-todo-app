@@ -1,0 +1,24 @@
+.task-input-container__modal :global {
+
+    text-align: center;
+
+    .task-input-container__modal {
+        &-heading {
+            margin-bottom: 20px;
+            color: var(--mfx-color-red);
+        }
+        &-error-list {
+            margin-bottom: 20px;
+            p {
+                color: var(--mfx-color-error);
+                margin-bottom: 10px;
+            }
+        }
+
+        &-btn {
+            padding: 5px 0;
+            font-size: 1rem;
+        }
+        
+    }
+}

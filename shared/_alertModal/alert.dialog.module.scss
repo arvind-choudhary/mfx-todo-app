@@ -1,0 +1,36 @@
+.alert-dialog :global {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    .alert-dialog-container {
+        background-color: #ffffff;
+        min-width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        border-radius: 5px;
+
+        &-footer {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+
+            button {
+                width: 30%;
+                padding: 5px 0px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

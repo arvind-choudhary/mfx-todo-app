@@ -1,0 +1,76 @@
+:root {
+  
+  --mfx-color-dark-gray-1: #212529;
+  --mfx-color-dark-gray-2: #343a40;
+  --mfx-color-dark-gray-3: #495057;
+  --mfx-color-dark-gray-4: #6E6D70;
+  --mfx-color-light-gray-1: #DFDEDF;
+  --mfx-color-light-gray-2: #f8f9fa;
+  
+  --mfx-color-white: #ffffff;
+  --mfx-color-error: rgb(235, 53, 53);
+  --mfx-color-red: red;
+
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h2, h4 {
+  font-family: var(--font-roboto-700);
+}
+
+.hide {
+  display: none;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20%, 0);
+    transform: translate3d(0, -20%, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
